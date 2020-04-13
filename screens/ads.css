@@ -1,0 +1,80 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#container {
+    display: flex;
+    padding: 10px;
+    /* margin: 0px; */
+    /* flex-direction: column; */
+    background-color: whitesmoke;
+    /* width: 100%; */
+    /* position: fixed; */
+    /* z-index: -10; */
+    border: 1px solid black;
+}
+/* #form > input {
+    margin: 10px 0px 10px 0px;
+    width: 40%;
+    height: 25px;
+    padding: 2px;
+} */
+#form textarea {
+    margin: 5px;
+    height: 125px;
+    width: 350px;
+}
+#form button {
+    margin: 5px;
+    width: 75px;
+}
+#category {
+    display: flex;
+
+    flex: 1;
+    /* flex-direction: column; */
+}
+h4{
+    padding: 20px;
+}
+/* #category fieldset {
+    position: absolute;
+    margin: auto;
+    margin-top: 75px;
+    width: 700px;
+    border: 1px solid rgba(0,47,52,.64);;
+}
+#category ul {
+    position: relative;
+}
+#category ul :hover {
+    background-color: lightgray;
+}
+#category ul li {
+    width: 400px;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    list-style: none;
+    color: rgba(0,47,52,.64);
+    cursor: pointer;
+    margin-top: 1px;
+}
+span{
+    position: absolute;
+    font-size: 22px;
+    margin:0px 0px 5px 10px;
+}
+#arrow {
+    position: absolute;
+    margin-left: 350px;
+}
+#category ul ul{
+    position: absolute;
+    margin-left: 410px;
+    display: none;
+
+}
+#category ul ul li{
+    width: 275px;
+    height: 25px;
+} */

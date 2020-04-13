@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olx Application</title>
+    <link rel="styleSheet" href="olx.css">
+    
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <div class="olx">
+            <img src="../public/Assets/olx.logo.PNG" />
+            </div>
+                <div class="searchBox">
+                <span class="map"><img src="../public/Assets/map.png" ></span>
+                <input id="inp1" value="Pakistan" placeholder="search city" type="search">
+               <span class="arrow">
+                   <button class="arrow"><img src="../public/Assets/arroe_icon.png"></button>
+                   </span> 
+            </div>
+            <div class="findBox">
+                <input id="inp2" type="search" placeholder="Find car,Mobile Phones and More...">
+                <span id="searchBtn"><img src="../public/Assets/search.png"></span>
+            </div>
+            <div class="chat">
+                <img src="../public/Assets/chat_icon.png" >
+                <img src="../public/Assets/bell.png" >
+            </div>
+            <div id="login">
+                <button onclick="log()" id="loginBtn">Login</button>
+                <button onclick="logOut()" id="logoutBtn" style="display: none;">LogOut</button>
+            </div>
+            <div class="sell">
+                <img src="./Assets/camera.png" >
+                <button onclick="sell()">Sell</button>
+            </div>
+            
+            </div>
+        </div>
+        <div id="category">
+            <span class="category">All Catogery<button class="catBtn"><img src="../public/Assets/arroe_icon.png"></button></span> 
+            <div class="msc">
+                <span>Mobile Phones</span>
+                <span>Cars</span>
+                <span>Motor Cycles</span>
+                <span>Homes</span>
+                <span>Tv-Radio-Audio</span>
+                <span>Tablets</span>
+                <span>Land & Plot</span>
+
+            </div>
+        </div>
+        <div id="main">
+            <img src="../public/Assets/mainpic.PNG" > 
+        </div>
+        <div class="ads">
+            <p>Ads Closed by <span>Google</span></p>
+        </div>
+        <div class="adsBtn">
+            <button>Stop seeing this ad</button>
+            <button>Why this ad</button>
+        </div>
+        <div id="para">
+            <p>Fresh Recommendations</p>
+        </div>
+        <div id="get-data">
+            
+        </div>
+        
+        
+        <!-- <div class="ads">
+            <p>Ads Closed by <span>Google</span></p>
+        </div>
+        <div class="adsBtn">
+            <button>Stop seeing this ad</button>
+            <button>Why this ad</button>
+        </div> -->
+        <div class="foot1">
+            <img src="../public/Assets/Foot1.PNG"/>
+        </div>
+        <div class="footer">
+            <table>
+                    <tr>
+                        <th>POPULAR CATEGORIES</th>
+                        <th>TRENDING SEARCHES</th>
+                        <th>ABOUT US</th>
+                        <th>OLX</th>
+                        </tr>
+                        <tr>
+                            <td>Cars</td>
+                            <td>Bike</td>
+                            <td>About Olx Group</td>
+                            <td>help</td>
+                        </tr>
+                        <tr>
+                            <td>Flats for rent</td>
+                            <td>Watches</td>
+                            <td>Olx Blog</td>
+                            <td>Sitemap</td>
+                        </tr>
+                        <tr>
+                            <td>Jobs</td>
+                            <td>Books</td>
+                            <td>Contact us</td>
+                            <td>legal & privecy information</td>
+                        </tr>
+                        <tr>
+                            <td>Mobiles Phones</td>
+                            <td>Dogs</td>
+                            <td>Olx for business</td>
+                            <td></td>
+                        </tr>    
+            </table>
+            <img class="footerImg" src="../public/Assets/footer.PNG"/>
+        </div>
+        <div class="endingPara">
+            <table class="tbl1">
+                <tr>
+                    <th>Other Countries</th>
+                    <td>India -</td>
+                    <td>South Africa -</td>
+                    <td>Indonesia</td>
+                </tr>
+            </table>
+            <table class="tbl2">
+                <tr>
+                        <th>Free Classifieds in Pakistan</th>
+                        <td>. &copy; 2006-2019 OLX</td>
+                    </tr>
+            </table>
+        </div>
+        
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8Z5tP4qYxIbNQ6Vx3MyIDeGMXk9N48js",
+    authDomain: "olx-expertizo-ms7.firebaseapp.com",
+    databaseURL: "https://olx-expertizo-ms7.firebaseio.com",
+    projectId: "olx-expertizo-ms7",
+    storageBucket: "olx-expertizo-ms7.appspot.com",
+    messagingSenderId: "493974732388",
+    appId: "1:493974732388:web:399fef570a329a245d2971",
+    measurementId: "G-CQJ6DGWB72"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="screens/login/signup.js"></script>
+    <script src="screens/login/login.js"></script>
+    <script src="index.js"></script>
+
+</html>

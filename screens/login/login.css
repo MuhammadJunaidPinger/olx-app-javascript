@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+#logPage{
+    /* display: flex; */
+
+    flex: 1;
+    border: 5px double rgb(160, 131, 59);
+    position: relative;
+    text-align: center;
+    padding-top: 35px;
+    margin: auto;
+    margin-top: 25px;
+    height: 450px;
+    width: 350px;
+    background-color: black;
+    color: rgb(160, 131, 59);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 35px;
+    padding: 2px;
+    font-family: monospace;
+
+}
+#logPage img{
+    width: 100px;
+    height: 80px;
+}
+#logPage input {
+    width: 225px;
+    margin-top: 35px;
+    border: 2px double rgb(160, 131, 59);
+    border-radius: 15px;
+    height: 20px;
+    text-align: center;
+    outline: hidden;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    font-family: monospace;
+    outline: none;
+}
+#logPage button {
+    width: 95px;
+    height: 25px;
+    border: 2px double;
+    border-radius: 15px;
+    background-color: black;
+    color:rgb(160, 131, 59);
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}

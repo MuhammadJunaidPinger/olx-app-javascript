@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp</title>
+
+  <link href="../../olx.css" rel="stylesheet">
+  <link href="signup.css" rel="stylesheet">  
+</head>
+
+<body>
+  <div id="app">
+    <div id="container">
+      <div class="olx">
+        <img src="../../Assets/olx.logo.PNG" />
+      </div>
+      <div class="searchBox">
+        <span class="map"><img src="../../Assets/map.png"></span>
+        <input id="inp1" value="Pakistan" placeholder="search city" type="search">
+        <span class="arrow">
+          <button class="arrow"><img src="../../Assets/arroe_icon.png"></button>
+        </span>
+      </div>
+      <div class="findBox">
+        <input id="inp2" type="search" placeholder="Find car,Mobile Phones and More...">
+        <span id="searchBtn"><img src="../../Assets/search.png"></span>
+      </div>
+      <div class="chat">
+        <img src="../../Assets/chat_icon.png">
+        <img src="../../Assets/bell.png">
+      </div>
+      <div id="login">
+        <button>Login</button>
+        <button onclick="logOut()" id="logoutBtn" style="display: none;">LogOut</button>
+
+      </div>
+      <div class="sell">
+        <img src="../../Assets/camera.png">
+        <button>Sell</button>
+
+      </div>
+    </div>
+    <div id="sign_up">
+      <img src="../../Assets/olx.PNG" />
+      <h3>Login Page</h3>
+      Email: <input type="email" id="email" placeholder="Enter email here" /><br>
+      Password: <input type="password" id="password" placeholder="Enter password here" /><br>
+      ReType: <input type="password" id="reType" placeholder="ReType password here" /><br><br><br>
+      <button onclick="checkPassword()">Sign up</button>
+
+    </div>
+  </div>
+  
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8Z5tP4qYxIbNQ6Vx3MyIDeGMXk9N48js",
+    authDomain: "olx-expertizo-ms7.firebaseapp.com",
+    databaseURL: "https://olx-expertizo-ms7.firebaseio.com",
+    projectId: "olx-expertizo-ms7",
+    storageBucket: "olx-expertizo-ms7.appspot.com",
+    messagingSenderId: "493974732388",
+    appId: "1:493974732388:web:399fef570a329a245d2971",
+    measurementId: "G-CQJ6DGWB72"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="signup.js"></script>
+  
+
+</html>

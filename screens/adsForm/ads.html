@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads Form</title>
+    
+    <link href="ads.css" rel="stylesheet" >
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <div class="olx">
+            <img src="../../Assets/olx.logo.PNG" />
+            </div>
+            </div>
+
+        <div id="post-ad">
+            <h1 style="text-align: center; font-family: monospace;" >POST YOUR AD</h1>
+            <fieldset>
+                <h3>Choose A Category</h3><br>
+                    <span>Select Category: </span><br>
+                    <input type="search" id="category" placeholder="Enter Category" /><br>
+
+                    <!-- <span>Enter your Location:</span><br>
+                    <input type="text" id="location" placeholder="Enter your location" /><br><br> -->
+    
+                    <!-- <span>Brand Name:</span><br>
+                    <input type="text" id="brand" placeholder="Enter brand name" /><br><br> -->
+                        
+                    <!-- <span>Contact Number:</span><br>
+                    <input type="number" id="contact" placeholder="Enter your contact number" /><br><br> -->
+                        
+                    <span>Description of your Ads:</span><br>
+                    <textarea id="description"></textarea><br>
+                        
+                    <span>Price:</span><br>
+                    <input type="text" id="price"  placeholder="Enter your price in pkr" /><br><br>
+                        
+                    <span>Post your ad:</span><br>
+                    <input type="file" id="file"><br><br>
+                        
+                    <button type="submit" id="post" onclick="addPost()">Post</button>
+                
+                </fieldset>
+            </div>
+            <div id="get-data">
+                
+            </div>
+            <div class="endingPara">
+                <table class="tbl1">
+                    <tr>
+                        <th>Other Countries</th>
+                        <td>India -</td>
+                        <td>South Africa -</td>
+                        <td>Indonesia</td>
+                    </tr>
+                </table>
+                <table class="tbl2">
+                    <tr>
+                            <th>Free Classifieds in Pakistan</th>
+                            <td>. &copy; 2006-2019 OLX</td>
+                        </tr>
+                </table>
+            </div>
+            </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA8Z5tP4qYxIbNQ6Vx3MyIDeGMXk9N48js",
+    authDomain: "olx-expertizo-ms7.firebaseapp.com",
+    databaseURL: "https://olx-expertizo-ms7.firebaseio.com",
+    projectId: "olx-expertizo-ms7",
+    storageBucket: "olx-expertizo-ms7.appspot.com",
+    messagingSenderId: "493974732388",
+    appId: "1:493974732388:web:399fef570a329a245d2971",
+    measurementId: "G-CQJ6DGWB72"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="../../index.js"></script>
+
+</html>
